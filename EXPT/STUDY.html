@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== REMIXICONS ===============-->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>NEXUS CSD ACADEMIC RESOURCE</title>
+   </head>
+   <body>
+      <!--=============== HEADER ===============-->
+      <header class="header">
+         <nav class="nav container">
+            <div class="nav__data">
+               <a href="#" class="nav__logo">
+                  <i class="ri-planet-line"></i> NEXUS
+               </a>
+               
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line nav__burger"></i>
+                  <i class="ri-close-line nav__close"></i>
+               </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li><a href="#" class="nav__link">Home</a></li>
+
+                  <!-- <li><a href="#" class="nav__link">Maths (CDS)</a></li> -->
+
+
+
+                   <!--=============== DROPDOWN for Maths ===============-->
+                   <li class="dropdown__item">
+                     <div class="nav__link">
+                        Maths <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="#" class="dropdown__sublink" onclick="changeIframe('syllabus/math_syllabus.pdf')">
+                              <i class="ri-pie-chart-line"></i> Syllabus
+                           </a>                          
+                        </li>
+                        
+
+
+               
+
+                        
+
+
+                        <!--=============== DROPDOWN SUBMENU FOR PYQ ===============-->
+                        <li class="dropdown__subitem">
+                           <div class="dropdown__link">
+                              <i class="ri-bar-chart-line"></i> PYQ <i class="ri-add-line dropdown__add"></i>
+
+                              
+                           </div>
+
+
+
+                           <ul class="dropdown__submenu">
+                              <li>
+    
+                                    <a href="#" class="dropdown__sublink">
+                                    <i class="ri-file-list-line"></i> 2022 Sessional(1)
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink" onclick="changeIframe('PYQ/CDS.pdf')">
+                                    <i class="ri-cash-line"></i>  2022 Sessional(2)
+                                 </a>
+                              </li>
+
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-file-list-line"></i> 2022 End Sem
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-cash-line"></i> 2023 Sessional(1)
+                                 </a>
+                              </li>
+      
+                           </ul>
+                        </li>
+
+                        <!--=============== DROPDOWN SUBMENU FOR NOTES ===============-->
+                        <li class="dropdown__subitem">
+                           <div class="dropdown__link">
+                              <i class="ri-bar-chart-line"></i> NOTES Sessional(1)  <i class="ri-add-line dropdown__add"></i>
+                           </div>
+
+                           <ul class="dropdown__submenu">
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-file-list-line"></i> x
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-cash-line"></i> y
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-refund-2-line"></i> z
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+
+
+                        <!--=============== DROPDOWN SUBMENU FOR NOTES ===============-->
+                        <li class="dropdown__subitem">
+                           <div class="dropdown__link">
+                              <i class="ri-bar-chart-line"></i> NOTES Sessional(2)  <i class="ri-add-line dropdown__add"></i>
+                           </div>
+
+                           <ul class="dropdown__submenu">
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-file-list-line"></i> x
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-cash-line"></i> y
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-refund-2-line"></i> z
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+
+
+
+
+
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-pie-chart-line"></i> Videos
+                           </a>                          
+                        </li>
+                     </ul>
+                  </li>
+
+
+                  <!--=============== DROPDOWN for CP ===============-->
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        CP <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-pie-chart-line"></i> Syllabus
+                           </a>                          
+                        </li>
+                        
+
+
+               
+
+                        
+
+
+                        <!--=============== DROPDOWN SUBMENU FOR PYQ ===============-->
+                        <li class="dropdown__subitem">
+                           <div class="dropdown__link">
+                              <i class="ri-bar-chart-line"></i> PYQ <i class="ri-add-line dropdown__add"></i>
+
+                              
+                           </div>
+
+
+
+                           <ul class="dropdown__submenu">
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-file-list-line"></i> 2022 Sessional(1)
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-cash-line"></i>  2022 Sessional(2)
+                                 </a>
+                              </li>
+
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-file-list-line"></i> 2022 End Sem
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-cash-line"></i> 2023 Sessional(1)
+                                 </a>
+                              </li>
+      
+                           </ul>
+                        </li>
+
+                        <!--=============== DROPDOWN SUBMENU FOR NOTES ===============-->
+                        <li class="dropdown__subitem">
+                           <div class="dropdown__link">
+                              <i class="ri-bar-chart-line"></i> NOTES Sessional(1)  <i class="ri-add-line dropdown__add"></i>
+                           </div>
+
+                           <ul class="dropdown__submenu">
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-file-list-line"></i> x
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-cash-line"></i> y
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-refund-2-line"></i> z
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+
+
+                        <!--=============== DROPDOWN SUBMENU FOR NOTES ===============-->
+                        <li class="dropdown__subitem">
+                           <div class="dropdown__link">
+                              <i class="ri-bar-chart-line"></i> NOTES Sessional(2)  <i class="ri-add-line dropdown__add"></i>
+                           </div>
+
+                           <ul class="dropdown__submenu">
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-file-list-line"></i> x
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-cash-line"></i> y
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-refund-2-line"></i> z
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+
+
+
+
+
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-pie-chart-line"></i> Videos
+                           </a>                          
+                        </li>
+                     </ul>
+                  </li>
+
+
+
+                   <!--=============== DROPDOWN for IDA ===============-->
+                   <li class="dropdown__item">
+                     <div class="nav__link">
+                        IDA <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-pie-chart-line"></i> Syllabus
+                           </a>                          
+                        </li>
+                        
+
+
+               
+
+                        
+
+
+                        <!--=============== DROPDOWN SUBMENU FOR PYQ ===============-->
+                        <li class="dropdown__subitem">
+                           <div class="dropdown__link">
+                              <i class="ri-bar-chart-line"></i> PYQ <i class="ri-add-line dropdown__add"></i>
+
+                              
+                           </div>
+
+
+
+                           <ul class="dropdown__submenu">
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-file-list-line"></i> 2022 Sessional(1)
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink" onclick="changeIframe('PYQ/IDA.pdf')">
+                                    <i class="ri-cash-line"></i>  2022 Sessional(2)
+                                 </a>
+                              </li>
+
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-file-list-line"></i> 2022 End Sem
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-cash-line"></i> 2023 Sessional(1)
+                                 </a>
+                              </li>
+      
+                           </ul>
+                        </li>
+
+                        <!--=============== DROPDOWN SUBMENU FOR NOTES ===============-->
+                        <li class="dropdown__subitem">
+                           <div class="dropdown__link">
+                              <i class="ri-bar-chart-line"></i> NOTES Sessional(1)  <i class="ri-add-line dropdown__add"></i>
+                           </div>
+
+                           <ul class="dropdown__submenu">
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-file-list-line"></i> x
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-cash-line"></i> y
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-refund-2-line"></i> z
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+
+
+                        <!--=============== DROPDOWN SUBMENU FOR NOTES ===============-->
+                        <li class="dropdown__subitem">
+                           <div class="dropdown__link">
+                              <i class="ri-bar-chart-line"></i> NOTES Sessional(2)  <i class="ri-add-line dropdown__add"></i>
+                           </div>
+
+                           <ul class="dropdown__submenu">
+                              <li>
+                                 <a href="#" class="dropdown__sublink" onclick="changeIframe('notes/ida/L-10.pdf')">
+                                    <i class="ri-file-list-line"></i> L(10)
+                                 </a>
+                              </li>
+
+
+                              <li>
+                                 <a href="#" class="dropdown__sublink" onclick="changeIframe('notes/ida/L-11.pdf')">
+                                    <i class="ri-file-list-line"></i> L(11)
+                                 </a>
+                              </li>
+
+                              <li>
+                                 <a href="#" class="dropdown__sublink" onclick="changeIframe('notes/ida/L-12.pdf')">
+                                    <i class="ri-file-list-line"></i> L(12)
+                                 </a>
+                              </li>
+
+                              <li>
+                                 <a href="#" class="dropdown__sublink" onclick="changeIframe('notes/ida/L-13.pdf')">
+                                    <i class="ri-file-list-line"></i> L(13)
+                                 </a>
+                              </li>
+
+                              <li>
+                                 <a href="#" class="dropdown__sublink" onclick="changeIframe('notes/ida/L-14.pdf')">
+                                    <i class="ri-file-list-line"></i> L(14)
+                                 </a>
+                              </li>
+      
+
+                              <li>
+                                 <a href="#" class="dropdown__sublink" onclick="changeIframe('notes/ida/L-15.pdf')">
+                                    <i class="ri-file-list-line"></i> L(15)
+                                 </a>
+                              </li>
+      
+
+
+
+
+                           </ul>
+                        </li>
+
+
+
+
+
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-pie-chart-line"></i> Videos
+                           </a>                          
+                        </li>
+                     </ul>
+                  </li>
+                  
+
+
+                  
+                  <!-- <li><a href="#" class="nav__link">IDA</a></li> -->
+
+
+
+                   <!--=============== DROPDOWN for COMM SKILLS ===============-->
+                   <li class="dropdown__item">
+                     <div class="nav__link">
+                        COMM SKILLS <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-pie-chart-line"></i> Syllabus
+                           </a>                          
+                        </li>
+                        
+
+
+               
+
+                        
+
+
+                        <!--=============== DROPDOWN SUBMENU FOR PYQ ===============-->
+                        <li class="dropdown__subitem">
+                           <div class="dropdown__link">
+                              <i class="ri-bar-chart-line"></i> PYQ <i class="ri-add-line dropdown__add"></i>
+
+                              
+                           </div>
+
+
+
+                           <ul class="dropdown__submenu">
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-file-list-line"></i> 2022 Sessional(1)
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink" onclick="changeIframe('PYQ/COMSK.pdf')">
+                                    <i class="ri-cash-line"></i>  2022 Sessional(2)
+                                 </a>
+                              </li>
+
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-file-list-line"></i> 2022 End Sem
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-cash-line"></i> 2023 Sessional(1)
+                                 </a>
+                              </li>
+      
+                           </ul>
+                        </li>
+
+                        <!--=============== DROPDOWN SUBMENU FOR NOTES ===============-->
+                        <li class="dropdown__subitem">
+                           <div class="dropdown__link">
+                              <i class="ri-bar-chart-line"></i> NOTES Sessional(1)  <i class="ri-add-line dropdown__add"></i>
+                           </div>
+
+                           <ul class="dropdown__submenu">
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-file-list-line"></i> x
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-cash-line"></i> y
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-refund-2-line"></i> z
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+
+
+                        <!--=============== DROPDOWN SUBMENU FOR NOTES ===============-->
+                        <li class="dropdown__subitem">
+                           <div class="dropdown__link">
+                              <i class="ri-bar-chart-line"></i> NOTES Sessional(2)  <i class="ri-add-line dropdown__add"></i>
+                           </div>
+
+                           <ul class="dropdown__submenu">
+                              <li>
+                                 <!-- <a href="#" class="dropdown__sublink"> -->
+                                    <a href="#" class="dropdown__sublink" onclick="changeIframe('notes/COMSK/MODULE1.pdf')">
+                                       <i class="ri-cash-line"></i>Module 1 and 5  Commu.Network, Flow of Comm. Grammar
+                                    </a>
+                                 </li>
+                                 
+                                 <li>
+                                    <!-- <a href="#" class="dropdown__sublink"> -->
+                                    <a href="#" class="dropdown__sublink" onclick="changeIframe('notes/COMSK/MODULE2_R.pdf')">
+                                       <i class="ri-cash-line"></i> Module 2 Reading Skills
+                                    </a>
+                                 </li>
+                                 
+                                 <li>
+                                 
+                                       <a href="#" class="dropdown__sublink" onclick="changeIframe('notes/COMSK/MODULE2_L.pdf')">
+                                       <i class="ri-cash-line"></i>Module 2 Listening Skills
+                                    </a>
+                                 </li>
+                                 
+                                 
+                                 <li>
+                                
+                                    <a href="#" class="dropdown__sublink" onclick="changeIframe('notes/COMSK/MODULE3.pdf')">
+                                    <i class="ri-file-list-line"></i>Module 3 Group Discussion
+                                 </a>
+                              </li>
+      
+
+
+                           </ul>
+                        </li>
+
+
+
+
+
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-pie-chart-line"></i> Videos
+                           </a>                          
+                        </li>
+                     </ul>
+                  </li>
+
+                  <!--=============== DROPDOWN 2 ===============-->
+                  <!-- <li class="dropdown__item">
+                     <div class="nav__link">
+                        Comm Skills <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div> -->
+
+
+
+
+
+                     <!-- <ul class="dropdown__menu">
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-user-line"></i> Profiles
+                           </a>                          
+                        </li>
+
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-lock-line"></i> Accounts
+                           </a>
+                        </li>
+
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-message-3-line"></i> Messages
+                           </a>
+                        </li>
+                     </ul>
+                  </li> -->
+
+
+
+                   <!--=============== DROPDOWN for PE ===============-->
+                   <li class="dropdown__item">
+                     <div class="nav__link">
+                        PE <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-pie-chart-line"></i> Syllabus
+                           </a>                          
+                        </li>
+                        
+
+
+               
+
+                        
+
+
+                        <!--=============== DROPDOWN SUBMENU FOR PYQ ===============-->
+                        <li class="dropdown__subitem">
+                           <div class="dropdown__link">
+                              <i class="ri-bar-chart-line"></i> PYQ <i class="ri-add-line dropdown__add"></i>
+
+                              
+                           </div>
+
+
+
+                           <ul class="dropdown__submenu">
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-file-list-line"></i> 2022 Sessional(1)
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink" onclick="changeIframe('PYQ/PE.pdf')">
+                                    <i class="ri-cash-line"></i>  2022 Sessional(2)
+                                 </a>
+                              </li>
+
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-file-list-line"></i> 2022 End Sem
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-cash-line"></i> 2023 Sessional(1)
+                                 </a>
+                              </li>
+      
+                           </ul>
+                        </li>
+
+                        <!--=============== DROPDOWN SUBMENU FOR NOTES ===============-->
+                        <li class="dropdown__subitem">
+                           <div class="dropdown__link">
+                              <i class="ri-bar-chart-line"></i> NOTES Sessional(1)  <i class="ri-add-line dropdown__add"></i>
+                           </div>
+
+                           <ul class="dropdown__submenu">
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-file-list-line"></i> x
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-cash-line"></i> y
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-refund-2-line"></i> z
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+
+
+                        <!--=============== DROPDOWN SUBMENU FOR NOTES ===============-->
+                        <li class="dropdown__subitem">
+                           <div class="dropdown__link">
+                              <i class="ri-bar-chart-line"></i> NOTES Sessional(2)  <i class="ri-add-line dropdown__add"></i>
+                           </div>
+
+                           <ul class="dropdown__submenu">
+                              <li>
+                                 <a href="#" class="dropdown__sublink" onclick="changeIframe('notes/pe/PE_Module 3.pdf')">
+                                    <i class="ri-file-list-line"></i> module 3
+                                 </a>
+                              </li>
+                              
+                              <li>
+                                 <a href="#" class="dropdown__sublink" onclick="changeIframe('notes/pe/PE_Module 4.pdf')">
+                                 <!-- <a href="#" class="dropdown__sublink"> -->
+                                    <i class="ri-cash-line"></i> module 4
+                                 </a>
+                              </li>
+      
+                              <!-- <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-refund-2-line"></i> z
+                                 </a>
+                              </li> -->
+                           </ul>
+                        </li>
+
+
+
+
+
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-pie-chart-line"></i> Videos
+                           </a>                          
+                        </li>
+                     </ul>
+                  </li>
+
+
+
+
+                  <li><a href="#" class="nav__link">Contact</a></li>
+               </ul>
+            </div>
+         </nav>
+      </header>
+
+      <section>   
+<br><br><br><br><br>
+         <iframe id="content-iframe" src="page1.html" frameborder="0"></iframe>
+      </section>
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+      <script src="script.js"></script>
+   </body>
+</html>
