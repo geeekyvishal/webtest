@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Blog</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Write a Blog</a></li>
+        </ul>
+    </nav>
+    <section id="blog-posts">
+        <!-- Blog posts will be dynamically added here -->
+    </section>
+    
+    <div id="blog-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Write a Blog</h2>
+            <textarea id="blog-title" placeholder="Write your blog title here" maxlength="10" minlength="1"></textarea><br>
+            <textarea id="blog-content" placeholder="Write your blog here" cols="50" rows="10" minlength="20"></textarea><br>
+            <button id="submit-blog">Submit</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
