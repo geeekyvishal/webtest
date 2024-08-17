@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto Simulator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="card.css" />
+    <link rel="stylesheet" href="button.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+  }
+  
+  .crypto-card1 {
+    flex: 0 0 calc(25% - 20px); /* Adjust as needed */
+    margin-bottom: 20px;
+  }
+  
+  /* Adjust styles for smaller screens */
+  @media screen and (max-width: 768px) {
+    .crypto-card1 {
+      flex: 0 0 calc(50% - 20px);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .crypto-card1 {
+      flex: 0 0 calc(100% - 20px);
+    }
+  }
+  
+  main{
+    display: flex;
+    justify-content: space-between;
+  }
+
+    </style>
+
+
+  </head>
+  <body>
+
+    
+
+    <!-- <header class="header" data-header>
+      <div class="container">
+  
+        <a href="#" class="logo">
+          <img src="./assets/images/2logo.png" width="55" height="55" alt="CrypoJet logo">
+          CryptoJet
+        </a>
+  
+         <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+  
+            <li class="navbar-item">
+              <a href="learncrypto.html" class="navbar-link" data-nav-link>Market</a>
+            </li>
+  
+            <li class="navbar-item">
+              <a href="crypto-simulator/simulator.html" class="navbar-link" data-nav-link>Simulation</a>
+            </li>
+  
+            <li class="navbar-item">
+              <a href="blog2.html" class="navbar-link" data-nav-link>Blogs</a>
+            </li>
+  
+            <li class="navbar-item">
+              <a href="developers.html" class="navbar-link" data-nav-link>Developers</a>
+            </li>
+  
+          </ul>
+        </nav>
+  
+         <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+  
+        <a href="profiletest.html" class="btn btn-outline">Profile</a>
+  
+      </div> 
+    </header>  -->
+
+
+
+
+
+
+
+
+
+
+    <header>
+      <div class="header-container card-container">
+        <h1>Crypto Simulator</h1>
+        <div class="stats">
+          <p>Total Amount Spent: $ <span id="totalSpent">0</span></p>
+          <p>Total Profit/Loss: $ <span id="totalProfitLoss">0</span></p>
+        </div>
+        <button class="resetButton" onClick="window.location.reload();">Reset Simulator</button>
+      </div>
+    </header>
+
+
+
+    
+    <main>
+      <div class="nft">
+        <div class="main">
+          <img
+            class="tokenImage"
+            src="https://st3.depositphotos.com/5906102/14454/v/600/depositphotos_144548047-stock-illustration-crypto-currency-bitcoin-golden-symbol.jpg"
+            alt="NFT"
+          />
+          <p class="cryptoheading">Bitcoin</p>
+          <div class="price">
+            <p>Price: $57,760</p>
+          </div>
+          <hr>
+          <p>
+            <div class="crypto-card" id="Bitcoin">
+              <button class="buy" onclick="buyCrypto('Bitcoin', 57760)">Buy</button>
+              <button class="sell" onclick="sellCrypto('Bitcoin', 57760)">Sell</button>
+            </div>
+          </p>
+        </div>
+      </div>
+  
+      
+  
+  
+      
+      <div class="nft">
+        <div class="main">
+          <img
+            class="tokenImage"
+            src="https://thumbs.dreamstime.com/b/ethereum-vector-illustration-golden-realistic-coin-cryptocurrency-ether-black-background-digital-currency-eth-210807634.jpg"
+            alt="NFT"
+          />
+          <p class="cryptoheading">Ethereum</p>
+          <div class="price">
+            <p>Price: $2,949.1</p>
+          </div>
+          <hr>
+          <p>
+            <div class="crypto-card" id="Ethereum">
+              <button class="buy" onclick="buyCrypto('Ethereum', 2,949.1)">Buy</button>
+              <button class="sell" onclick="sellCrypto('Ethereum', 2,949.1)">Sell</button>
+            </div>
+          </p>
+        </div>
+      </div>
+      
+  
+  
+  
+      <div class="nft">
+        <div class="main">
+          <img
+            class="tokenImage"
+            src="https://th.bing.com/th/id/OIP.TlJxt36GTnvurWtPgTiUQAHaGg?rs=1&pid=ImgDetMain"
+            alt="NFT"
+          />
+          <p class="cryptoheading">Tether</p>
+          <div class="price">
+            <p>Price: $0.99833</p>
+          </div>
+          <hr>
+          <p>
+            <div class="crypto-card" id="Tether">
+              <button class="buy" onclick="buyCrypto('Tether', 0.99833)">Buy</button>
+              <button class="sell" onclick="sellCrypto('Tether', 0.99833)">Sell</button>
+            </div>
+          </p>
+        </div>
+      </div>
+      
+  
+  
+  
+      <div class="nft">
+        <div class="main">
+          <img
+            class="tokenImage"
+            src="https://thumbs.dreamstime.com/b/binance-bnb-crypto-coin-placed-reflective-surface-dark-background-cryptocurrency-physical-221029483.jpg"
+            alt="NFT"
+          />
+          <p class="cryptoheading">BNB</p>
+          <div class="price">
+            <p>Price: $554.71</p>
+          </div>
+          <hr>
+          <p>
+            <div class="crypto-card" id="BNB">
+              <button class="buy" onclick="buyCrypto('BNB', 554.71)">Buy</button>
+              <button class="sell" onclick="sellCrypto('BNB', 554.71)">Sell</button>
+            </div>
+          </p>
+        </div>
+      </div>
+  
+  
+  
+  
+    </main>
+  
+    <!-- second row starts here  -->
+    <main>
+      <div class="nft">
+        <div class="main">
+          <img
+            class="tokenImage"
+            src="https://st3.depositphotos.com/5906102/14454/v/600/depositphotos_144548047-stock-illustration-crypto-currency-bitcoin-golden-symbol.jpg"
+            alt="NFT"
+          />
+          <p class="cryptoheading">Bitcoin</p>
+          <div class="price">
+            <p>Price: $57,760</p>
+          </div>
+          <hr>
+          <p>
+            <div class="crypto-card" id="Bitcoin">
+              <button class="buy" onclick="buyCrypto('Bitcoin', 57760)">Buy</button>
+              <button class="sell" onclick="sellCrypto('Bitcoin', 57760)">Sell</button>
+            </div>
+          </p>
+        </div>
+      </div>
+  
+      
+  
+  
+      
+      <div class="nft">
+        <div class="main">
+          <img
+            class="tokenImage"
+            src="https://thumbs.dreamstime.com/b/ethereum-vector-illustration-golden-realistic-coin-cryptocurrency-ether-black-background-digital-currency-eth-210807634.jpg"
+            alt="NFT"
+          />
+          <p class="cryptoheading">Ethereum</p>
+          <div class="price">
+            <p>Price: $2,949.1</p>
+          </div>
+          <hr>
+          <p>
+            <div class="crypto-card" id="Ethereum">
+              <button class="buy" onclick="buyCrypto('Ethereum', 2,949.1)">Buy</button>
+              <button class="sell" onclick="sellCrypto('Ethereum', 2,949.1)">Sell</button>
+            </div>
+          </p>
+        </div>
+      </div>
+      
+  
+  
+  
+      <div class="nft">
+        <div class="main">
+          <img
+            class="tokenImage"
+            src="https://th.bing.com/th/id/OIP.TlJxt36GTnvurWtPgTiUQAHaGg?rs=1&pid=ImgDetMain"
+            alt="NFT"
+          />
+          <p class="cryptoheading">Tether</p>
+          <div class="price">
+            <p>Price: $0.99833</p>
+          </div>
+          <hr>
+          <p>
+            <div class="crypto-card" id="Tether">
+              <button class="buy" onclick="buyCrypto('Tether', 0.99833)">Buy</button>
+              <button class="sell" onclick="sellCrypto('Tether', 0.99833)">Sell</button>
+            </div>
+          </p>
+        </div>
+      </div>
+      
+  
+  
+  
+      <div class="nft">
+        <div class="main">
+          <img
+            class="tokenImage"
+            src="https://thumbs.dreamstime.com/b/binance-bnb-crypto-coin-placed-reflective-surface-dark-background-cryptocurrency-physical-221029483.jpg"
+            alt="NFT"
+          />
+          <p class="cryptoheading">BNB</p>
+          <div class="price">
+            <p>Price: $554.71</p>
+          </div>
+          <hr>
+          <p>
+            <div class="crypto-card" id="BNB">
+              <button class="buy" onclick="buyCrypto('BNB', 554.71)">Buy</button>
+              <button class="sell" onclick="sellCrypto('BNB', 554.71)">Sell</button>
+            </div>
+          </p>
+        </div>
+      </div>
+  
+  
+  
+  
+    </main>
+  
+
+    
+    <footer>
+      <p>&copy; 2024 Crypto Simulator</p>
+    </footer>
+    <script>
+      let totalSpent = 0;
+        let totalProfitLoss = 0;
+        const cryptoData = {};
+  
+        function buyCrypto(cryptoName, price) {
+          const amount = prompt(`Enter the amount of ${cryptoName} to buy:`);
+          if (amount) {
+            const transactionCharges = price * 0.01;
+            const totalCost = price * amount + transactionCharges;
+            totalSpent += totalCost;
+            updateTotalSpent(totalSpent);
+  
+            if (!(cryptoName in cryptoData)) {
+              cryptoData[cryptoName] = 0;
+            }
+            cryptoData[cryptoName] += parseInt(amount);
+            updateCryptoAmount(cryptoName, cryptoData[cryptoName]);
+          }
+        }
+  
+        function sellCrypto(cryptoName, price) {
+          if (cryptoName in cryptoData) {
+            const amount = prompt(`Enter the amount of ${cryptoName} to sell:`);
+            if (amount && cryptoData[cryptoName] >= amount) {
+              const profit = price * amount - price * amount * 0.3;
+              totalProfitLoss += profit;
+              updateTotalProfitLoss(totalProfitLoss);
+              cryptoData[cryptoName] -= parseInt(amount);
+              updateCryptoAmount(cryptoName, cryptoData[cryptoName]);
+            } else {
+              alert(`You don't have enough ${cryptoName} to sell.`);
+            }
+          } else {
+            alert(`You don't own any ${cryptoName}.`);
+          }
+        }
+  
+        function updateTotalSpent(amount) {
+          document.getElementById("totalSpent").textContent = amount.toFixed(2);
+        }
+  
+        function updateTotalProfitLoss(amount) {
+          document.getElementById("totalProfitLoss").textContent =
+            amount.toFixed(2);
+        }
+  
+        function updateCryptoAmount(cryptoName, amount) {
+          document.getElementById(
+            `${cryptoName}Amount`
+          ).textContent = `Amount: ${amount}`;
+        }
+    </script>
+  </body>
+</html>
